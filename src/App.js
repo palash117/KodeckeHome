@@ -1,61 +1,32 @@
-import React from 'react';
+import React from "react";
 // import logo from './logo.svg';
-import './App.css';
-import logo from './LOGO_512.png'
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "./components/Home";
+import DocscannerPolicy from "./components/DocscannerPolicy";
 
 function App() {
   return (
     <div style={styles.app}>
-      <div style={styles.container}>
-        <div style={styles.imageContainer} className="imageContainer">
-          <img style={styles.image} src={logo} className="image" alt="kodecke" ></img>
-        </div>
-        <div style={styles.messageContainer}>
-          <div style={styles.message}>
-            contact us at support@kodecke.com
-          </div>
-        </div>
-      </div>
+      <Router>
+        <Switch>
+          <Route path="/DOCSCANNERPOLICY">
+            <DocscannerPolicy />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
 
 const styles = {
-  app:{
-    width:"100%",
-    borderWidth:"1px",
-    height:"100%"
+  app: {
+    width: "100%",
+    borderWidth: "1px",
+    height: "100%",
   },
-  container:{
-    display:"flex",
-    height:"100%",
-    
-    flexDirection:"column",
-    alignItems:"center",
-    justifyContent:"center"
-    
-  },
-  imageContainer:{
-    width:"200px",
-    height:"200px",
-    animation:"logo-pop"
-  },
-  image:{
-    width:"200px",
-    height:"200px",
-    
-  },
-  messageContainer:{
-    // alignSelf:"flex-start",
-    // position:"absolute",
-    alignItems:"center",
-    bottom:"20px",
-    color:"white",
-    // borderWidth:"1px",
-    // borderColor:"black"
-  },
-  message:{
-    color:"white"
-  }
-}
+};
 export default App;
