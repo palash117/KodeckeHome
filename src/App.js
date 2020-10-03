@@ -8,7 +8,7 @@ function App() {
     <div style={styles.app}>
       <div style={styles.container}>
         <div style={styles.imageContainer} className="imageContainer">
-          <img style={styles.image} src={logo} className="image" ></img>
+          <img style={styles.image} src={logo} className="image" alt="kodecke" ></img>
         </div>
         <div style={styles.messageContainer}>
           <div style={styles.message}>
