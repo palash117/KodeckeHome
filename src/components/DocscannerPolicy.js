@@ -3,9 +3,6 @@ import DocScannerPolicyContents from "./DocScannerPolicyContents";
 
 function DocscannerPolicy() {
   return (
-    // <div>
-    // <h2 style={{ color: "white" }}>policy </h2>
-    // </div>
     <div style={styles.mainContainer}>
       <div style={styles.container}>
         <div style={styles.header}>

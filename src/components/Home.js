@@ -43,13 +43,9 @@ const styles = {
     height: "200px",
   },
   messageContainer: {
-    // alignSelf:"flex-start",
-    // position:"absolute",
     alignItems: "center",
     bottom: "20px",
     color: "white",
-    // borderWidth:"1px",
-    // borderColor:"black"
   },
   message: {
     color: "white",
